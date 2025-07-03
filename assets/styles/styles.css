@@ -46,7 +46,8 @@ form > h2 {
 }
 
 form > input[type="email"],
-form > input[type="password"] {
+form > input[type="password"],
+form > input[type="text"] {
     padding: 1rem 2rem;
     background-color: transparent;
     border: 1px solid var(--text-color);
@@ -56,10 +57,25 @@ form > input[type="password"] {
 }
 
 form > input[type="email"]::placeholder,
-form > input[type="password"]::placeholder {
+form > input[type="password"]::placeholder,
+form > input[type="text"]::placeholder{
     color: var(--text-color);
     font-size: 16px;
     position: relative;
+}
+
+form > .mail-icon {
+    position: relative;
+    left: 92px;
+    top: -36px;
+}
+
+form > .eye-icon,
+form > .eye-closed-icon {
+    position: relative;
+    left: 92px;
+    top: -36px;
+    cursor: pointer;
 }
 
 form > button[type="submit"] {
